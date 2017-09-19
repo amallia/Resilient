@@ -1,0 +1,12 @@
+Failable
+
+3. Move funtions from trait into object
+
+Task
+
+1. Use the failure detector
+2. Handle functions returning void
+
+Failures
+
+1. Specify the types of failures
