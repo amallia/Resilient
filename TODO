@@ -1,6 +1,6 @@
 Failable
 
-3. Move funtions from trait into object
+4. Add a 'getvalueor(callable)' which lazily calls the callable if it's failure
 
 Task
 
@@ -9,4 +9,12 @@ Task
 
 Failures
 
-1. Specify the types of failures
+1. Specify the types of failures so that Task can use it when constructing the failable
+
+Job
+
+1. provide a 'as_callable', signature like 'run', which moves the job into a lambda and returns it.
+
+FUTURE
+
+Use invoke instead of calling the functions
