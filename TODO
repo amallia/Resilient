@@ -1,6 +1,8 @@
 Failable
 
 4. Add a 'getvalueor(callable)' which lazily calls the callable if it's failure
+5. Create base class for deriving from boost::variant to reduce code duplication
+6. Delete useless methods and only keep the few which are usefull for creating failures
 
 Task
 
@@ -10,7 +12,6 @@ Task
 Failures
 
 0. Rewrite to call pre/post instead of fold.
-1. Rename failures to detector to not get confused with failable and failures inside failables
 
 Job
 
