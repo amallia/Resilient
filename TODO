@@ -9,7 +9,8 @@ Task
 
 Failures
 
-1. Specify the types of failures so that Task can use it when constructing the failable
+0. Rewrite to call pre/post instead of fold.
+1. Rename failures to detector to not get confused with failable and failures inside failables
 
 Job
 
