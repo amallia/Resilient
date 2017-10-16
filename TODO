@@ -1,7 +1,6 @@
 Failable
 
 4. Add a 'getvalueor(callable)' which lazily calls the callable if it's failure
-5. Create base class for deriving from boost::variant to reduce code duplication
 6. Delete useless methods and only keep the few which are usefull for creating failures
 
 Task
@@ -11,7 +10,6 @@ Task
 
 Failures
 
-0. Rewrite to call pre/post instead of fold.
 
 Job
 
@@ -19,4 +17,6 @@ Job
 
 FUTURE
 
-Use invoke instead of calling the functions
+0. Put utilities into detail namespace
+1. Use invoke instead of calling the functions
+2. Change the OperationResult from being a variant of std::exception_ptr to use a wrapper type so that it T is exception ptr the code works anyway
