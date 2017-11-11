@@ -1,3 +1,6 @@
+2. Cleanup dependencies and imports
+
+
 Failable
 
 4. Add a 'getvalueor(callable)' which lazily calls the callable if it's failure
@@ -5,18 +8,19 @@ Failable
 
 Task
 
-1. Use the failure detector
 2. Handle functions returning void
 
-Failures
+Detectors
+
+1. Add Not detector
 
 
 Job
 
+0. Fix compilation
 1. provide a 'as_callable', signature like 'run', which moves the job into a lambda and returns it.
 
 FUTURE
 
 0. Put utilities into detail namespace
 1. Use invoke instead of calling the functions
-2. Change the OperationResult from being a variant of std::exception_ptr to use a wrapper type so that it T is exception ptr the code works anyway
